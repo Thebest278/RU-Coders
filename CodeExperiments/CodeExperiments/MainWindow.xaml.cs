@@ -32,7 +32,7 @@ namespace CodeExperiments
             {
                 break;
             }
-            MessageBox.Show("Hypothesis is false");
+            MessageBox.Show("Hypothesis is gogoogaga");
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)

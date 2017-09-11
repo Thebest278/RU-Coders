@@ -10,3 +10,5 @@
 \\ict.ru.ac.za\DFS\UGHomes\g17s1966\My Documents\Visual Studio 2015\CodeExperiments\CodeExperiments\obj\x86\Debug\CodeExperiments.csproj.GenerateResource.Cache
 \\ict.ru.ac.za\DFS\UGHomes\g17s1966\My Documents\Visual Studio 2015\CodeExperiments\CodeExperiments\obj\x86\Debug\CodeExperiments.exe
 \\ict.ru.ac.za\DFS\UGHomes\g17s1966\My Documents\Visual Studio 2015\CodeExperiments\CodeExperiments\obj\x86\Debug\CodeExperiments.pdb
+C:\Users\gnama\The Archive\School\Comp Sc 102\GIT\RU-Coders\CodeExperiments\CodeExperiments\obj\x86\Debug\CodeExperiments.exe
+C:\Users\gnama\The Archive\School\Comp Sc 102\GIT\RU-Coders\CodeExperiments\CodeExperiments\obj\x86\Debug\CodeExperiments.pdb
