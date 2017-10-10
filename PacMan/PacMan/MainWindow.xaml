@@ -1,0 +1,18 @@
+﻿<Window x:Class="PacMan.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PacMan"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="657.564" Width="1160.519">
+    <Grid Margin="0,0,2,0">
+        <Canvas x:Name="Background" Margin="10,14,119,87" Background="#FF1D1C1C" KeyDown="Background_KeyDown">
+            <Image x:Name="Yellow" Height="50" Canvas.Left="94" Canvas.Top="341" Width="50" Source="Resources/yellow_guy.gif"/>
+            <Image x:Name="Pink" Height="50" Canvas.Left="428" Canvas.Top="52" Width="50" Source="Resources/pink_guy.gif"/>
+            <Image x:Name="Red" Height="50" Canvas.Left="671" Canvas.Top="215" Width="50" Source="Resources/red_guy.gif"/>
+            <Image x:Name="MsPac" Height="50" Canvas.Left="25" Canvas.Top="18" Width="50" Source="Resources/down.gif"/>
+        </Canvas>
+
+    </Grid>
+</Window>
