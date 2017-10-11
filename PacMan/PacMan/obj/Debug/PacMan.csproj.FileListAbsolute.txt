@@ -13,3 +13,18 @@ c:\users\thebe\documents\visual studio 2015\Projects\PacMan\PacMan\obj\Debug\Pac
 c:\users\thebe\documents\visual studio 2015\Projects\PacMan\PacMan\obj\Debug\PacMan.exe
 c:\users\thebe\documents\visual studio 2015\Projects\PacMan\PacMan\obj\Debug\PacMan.pdb
 c:\Users\Thebe\documents\visual studio 2015\Projects\PacMan\PacMan\bin\Debug\ThinkLib.dll
+C:\Users\Tumelo\Documents\RU-Coders\PacMan\PacMan\bin\Debug\PacMan.exe.config
+C:\Users\Tumelo\Documents\RU-Coders\PacMan\PacMan\bin\Debug\PacMan.exe
+C:\Users\Tumelo\Documents\RU-Coders\PacMan\PacMan\bin\Debug\PacMan.pdb
+C:\Users\Tumelo\Documents\RU-Coders\PacMan\PacMan\obj\Debug\PacMan.csprojResolveAssemblyReference.cache
+C:\Users\Tumelo\Documents\RU-Coders\PacMan\PacMan\obj\Debug\MainWindow.g.cs
+C:\Users\Tumelo\Documents\RU-Coders\PacMan\PacMan\obj\Debug\App.g.cs
+C:\Users\Tumelo\Documents\RU-Coders\PacMan\PacMan\obj\Debug\PacMan_MarkupCompile.cache
+C:\Users\Tumelo\Documents\RU-Coders\PacMan\PacMan\obj\Debug\PacMan_MarkupCompile.lref
+C:\Users\Tumelo\Documents\RU-Coders\PacMan\PacMan\obj\Debug\MainWindow.baml
+C:\Users\Tumelo\Documents\RU-Coders\PacMan\PacMan\obj\Debug\PacMan.g.resources
+C:\Users\Tumelo\Documents\RU-Coders\PacMan\PacMan\obj\Debug\PacMan.Properties.Resources.resources
+C:\Users\Tumelo\Documents\RU-Coders\PacMan\PacMan\obj\Debug\PacMan.csproj.GenerateResource.Cache
+C:\Users\Tumelo\Documents\RU-Coders\PacMan\PacMan\obj\Debug\PacMan.csproj.CoreCompileInputs.cache
+C:\Users\Tumelo\Documents\RU-Coders\PacMan\PacMan\obj\Debug\PacMan.exe
+C:\Users\Tumelo\Documents\RU-Coders\PacMan\PacMan\obj\Debug\PacMan.pdb

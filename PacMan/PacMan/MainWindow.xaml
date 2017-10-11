@@ -5,14 +5,110 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PacMan"
         mc:Ignorable="d"
-        Title="MainWindow" Height="657.564" Width="1160.519">
-    <Grid Margin="0,0,2,0">
-        <Canvas x:Name="Background" Margin="10,14,119,87" Background="#FF1D1C1C" KeyDown="Background_KeyDown">
+        Title="MainWindow" Height="657.564" Width="1160.519" KeyUp="Window_KeyUp" KeyDown="Window_KeyDown_1">
+    <Grid x:Name="p" Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="846*"/>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="270*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas x:Name="Background" Margin="10,14,119,87" Background="Black" Grid.ColumnSpan="3" Visibility="Visible">
             <Image x:Name="Yellow" Height="50" Canvas.Left="94" Canvas.Top="341" Width="50" Source="Resources/yellow_guy.gif"/>
-            <Image x:Name="Pink" Height="50" Canvas.Left="428" Canvas.Top="52" Width="50" Source="Resources/pink_guy.gif"/>
+            <Image x:Name="Pink" Height="50" Canvas.Left="169" Canvas.Top="53" Width="50" Source="Resources/pink_guy.gif"/>
             <Image x:Name="Red" Height="50" Canvas.Left="671" Canvas.Top="215" Width="50" Source="Resources/red_guy.gif"/>
-            <Image x:Name="MsPac" Height="50" Canvas.Left="25" Canvas.Top="18" Width="50" Source="Resources/down.gif"/>
+            <Image x:Name="MsPac" Height="50" Canvas.Left="39" Canvas.Top="10" Width="50" Source="Resources/down.gif"/>
+            <Image x:Name="i2" Height="23" Canvas.Left="46" Canvas.Top="101" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png"  Uid="l"/>
+            <Image x:Name="i1" Height="23" Canvas.Left="47" Canvas.Top="30" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png"  Uid="l"/>
+            <Image x:Name="i3" Height="23" Canvas.Left="46" Canvas.Top="173" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png"  Uid="l"/>
+            <Image x:Name="i6" Height="23" Canvas.Left="46" Canvas.Top="321" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png"  Uid="l"/>
+            <Image x:Name="o19" Height="23" Canvas.Left="816" Canvas.Top="30" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png"  Uid="l"/>
+            <Image x:Name="o18" Height="23" Canvas.Left="734" Canvas.Top="30" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="o5" Height="23" Canvas.Left="643" Canvas.Top="30" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="o4" Height="23" Canvas.Left="561" Canvas.Top="30" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p14" Height="23" Canvas.Left="483" Canvas.Top="30" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p13" Height="23" Canvas.Left="393" Canvas.Top="30" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p0" Height="23" Canvas.Left="294" Canvas.Top="30" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="i22" Height="23" Canvas.Left="208" Canvas.Top="30" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="i9" Height="23" Canvas.Left="121" Canvas.Top="30" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="i7" Height="23" Canvas.Left="47" Canvas.Top="400" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="i8" Height="23" Canvas.Left="47" Canvas.Top="472" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="i5" Height="23" Canvas.Left="47" Canvas.Top="242" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p3" Height="23" Canvas.Left="294" Canvas.Top="242" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p2" Height="23" Canvas.Left="294" Canvas.Top="173" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p1" Height="23" Canvas.Left="294" Canvas.Top="101" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="i16" Height="23" Canvas.Left="208" Canvas.Top="472" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="i17" Height="23" Canvas.Left="208" Canvas.Top="400" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="i18" Height="23" Canvas.Left="208" Canvas.Top="318" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="i19" Height="23" Canvas.Left="208" Canvas.Top="242" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="i20" Height="23" Canvas.Left="208" Canvas.Top="173" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="i21" Height="23" Canvas.Left="208" Canvas.Top="101" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="i15" Height="23" Canvas.Left="121" Canvas.Top="472" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="i14" Height="23" Canvas.Left="121" Canvas.Top="400" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="i13" Height="23" Canvas.Left="121" Canvas.Top="318" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="i12" Height="23" Canvas.Left="121" Canvas.Top="242" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="i11" Height="23" Canvas.Left="121" Canvas.Top="173" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="i10" Height="23" Canvas.Left="121" Canvas.Top="101" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="l10" Height="23" Canvas.Left="969" Canvas.Top="30" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="l9" Height="23" Canvas.Left="904" Canvas.Top="30" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="o8" Height="23" Canvas.Left="643" Canvas.Top="242" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="o7" Height="23" Canvas.Left="643" Canvas.Top="172" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="o6" Height="23" Canvas.Left="643" Canvas.Top="101" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p21" Height="23" Canvas.Left="561" Canvas.Top="472" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p22" Height="23" Canvas.Left="561" Canvas.Top="400" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="o0" Height="23" Canvas.Left="561" Canvas.Top="318" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="o1" Height="23" Canvas.Left="561" Canvas.Top="242" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="o2" Height="23" Canvas.Left="561" Canvas.Top="172" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="o3" Height="23" Canvas.Left="561" Canvas.Top="101" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p20" Height="23" Canvas.Left="483" Canvas.Top="472" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p19" Height="23" Canvas.Left="483" Canvas.Top="400" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p18" Height="23" Canvas.Left="483" Canvas.Top="318" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p7" Height="23" Canvas.Left="393" Canvas.Top="472" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p8" Height="23" Canvas.Left="393" Canvas.Top="400" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p9" Height="23" Canvas.Left="393" Canvas.Top="318" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p17" Height="23" Canvas.Left="483" Canvas.Top="242" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p16" Height="23" Canvas.Left="483" Canvas.Top="172" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p15" Height="23" Canvas.Left="483" Canvas.Top="101" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p11" Height="23" Canvas.Left="393" Canvas.Top="172" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p10" Height="23" Canvas.Left="393" Canvas.Top="242" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p12" Height="23" Canvas.Left="393" Canvas.Top="101" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p6" Height="23" Canvas.Left="294" Canvas.Top="472" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p5" Height="23" Canvas.Left="294" Canvas.Top="400" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="p4" Height="23" Canvas.Left="294" Canvas.Top="318" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="l13" Height="23" Canvas.Left="969" Canvas.Top="242" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="l12" Height="23" Canvas.Left="969" Canvas.Top="173" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="l11" Height="23" Canvas.Left="969" Canvas.Top="101" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="l8" Height="23" Canvas.Left="904" Canvas.Top="101" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="o20" Height="23" Canvas.Left="816" Canvas.Top="101" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="o17" Height="23" Canvas.Left="734" Canvas.Top="101" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="o11" Height="23" Canvas.Left="643" Canvas.Top="472" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="o10" Height="23" Canvas.Left="643" Canvas.Top="400" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="o22" Height="23" Canvas.Left="816" Canvas.Top="242" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="o21" Height="23" Canvas.Left="816" Canvas.Top="172" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="l7" Height="23" Canvas.Left="904" Canvas.Top="173" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="o16" Height="23" Canvas.Left="734" Canvas.Top="172" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="l3" Height="23" Canvas.Left="904" Canvas.Top="472" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="l2" Height="23" Canvas.Left="816" Canvas.Top="472" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png" Uid="l"/>
+            <Image x:Name="o12" Height="23" Canvas.Left="734" Canvas.Top="472" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png"  Uid="l"/>
+            <Image x:Name="l16" Height="23" Canvas.Left="969" Canvas.Top="472" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png"  Uid="l"/>
+            <Image x:Name="l15" Height="23" Canvas.Left="969" Canvas.Top="400" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png"  Uid="l"/>
+            <Image x:Name="l14" Height="23" Canvas.Left="969" Canvas.Top="318" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png"  Uid="l"/>
+            <Image x:Name="o15" Height="23" Canvas.Left="734" Canvas.Top="242" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png"  Uid="l"/>
+            <Image x:Name="o14" Height="23" Canvas.Left="734" Canvas.Top="321" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png"  Uid="l"/>
+            <Image x:Name="l0" Height="23" Canvas.Left="816" Canvas.Top="321" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png"  Uid="l"/>
+            <Image x:Name="l5" Height="23" Canvas.Left="904" Canvas.Top="318" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png"  Uid="l"/>
+            <Image x:Name="l4" Height="23" Canvas.Left="904" Canvas.Top="400" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png"  Uid="l"/>
+            <Image x:Name="l1" Height="23" Canvas.Left="816" Canvas.Top="400" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png"  Uid="l"/>
+            <Image x:Name="o13" Height="23" Canvas.Left="734" Canvas.Top="400" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png"  Uid="l"/>
+            <Image x:Name="l6" Height="23" Canvas.Left="904" Canvas.Top="242" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png"  Uid="l"/>
+            <Image x:Name="o9" Height="23" Canvas.Left="643" Canvas.Top="318" Width="43" RenderTransformOrigin="-0.952,0.279" Source="dot-the.png"  Uid="l"/>
         </Canvas>
+        <Image x:Name="iggo" HorizontalAlignment="Left" Height="43" Margin="117,203,0,0" VerticalAlignment="Top" Width="65" RenderTransformOrigin="0.611,0.642"/>
+        <Label x:Name="lac" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="584" Width="1116" Visibility="Hidden">
+            <Label.Background>
+                <ImageBrush ImageSource="Resources/p2r0pm.gif"/>
+            </Label.Background>
+            <Button Content="Click Here To Start" HorizontalAlignment="Left" VerticalAlignment="Top" Width="270" Height="53" FontSize="24" Click="Button_Click_1"/>
+        </Label>
 
     </Grid>
 </Window>

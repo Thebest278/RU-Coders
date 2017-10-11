@@ -122,6 +122,14 @@
     </Resource>
     <Resource Include="Resources\yellow_guy.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="dot-the.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\p2r0pm.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
