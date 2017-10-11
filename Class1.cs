@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace WpfApp5
 {
+    public enum Direction { Up, Down, Left, Right }
     class Character
     {
-        public enum Direction { Up, Down, Left, Right }
         public Direction Movement { get; set; }
         protected int Speed { get; set; }
         public Position Pos { get; set; }
@@ -19,7 +19,7 @@ namespace WpfApp5
             Speed = speed;
             CurrentState = "NotMoving";
         }
-        public Position K(Position n) 
+       /* public Position K(Position n) 
         {
             switch (Movement)
             {
@@ -36,7 +36,7 @@ namespace WpfApp5
                     n.Y--;
                     break;
             }
-            return new Position(n.X,n.Y);
+            return new Position(n.X,n.Y);*/
         }
         public void Move()
         {
