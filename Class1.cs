@@ -19,7 +19,7 @@ namespace WpfApp5
             Speed = speed;
             CurrentState = "NotMoving";
         }
-        public Position K(Position n)
+        public Position K(Position n) 
         {
             switch (Movement)
             {
@@ -40,7 +40,36 @@ namespace WpfApp5
         }
         public void Move()
         {
+            switch (CurrentState)
+            {
+                case "MovingLeft":
 
+                    if (this.Pos.X > 0)
+                    {
+                        this.Pos.X -= this.Speed;
+                    }
+                    break;
+                case "MovingRight":
+                    if (this.Pos.X<this.Playground.Width)
+                    {
+                        this.Pos.X += this.Speed;
+                    }
+                        break;
+                case "MovingUp":
+                    if (this.Pos.Y>0)
+                    {
+                        this.Pos.Y -= this.Speed;
+                    }
+                    break;
+                case "Movingdown":
+                    if (this.Pos.Y < this.Playground.Height)
+                    {
+                        this.Pos.Y += this.Speed;
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
     }
     class Position
@@ -53,4 +82,23 @@ namespace WpfApp5
             Y = y;
         }
     }
+    class Maze
+    {
+        public double Width { get; set; }
+        public double Height { get; set; }
+        public Maze(Canvas canvas1)
+        {
+            Width = canvas1.ActualWidth;
+            Height = canvas1.Height;
+        }
+        public Maze(Canvas canvas1, string imagePath)
+        {
+            Width = canvas1.ActualWidth;
+            Height = canvas1.Height;
+            //Image stuff
+        }
+    public class MainCharacter:Character
+    {
+        
+    }   
 }
